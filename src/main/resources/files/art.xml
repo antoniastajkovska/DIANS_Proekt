@@ -1,0 +1,135 @@
+<osm version="0.6" generator="CGImap 0.8.9 (1855402 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<way id="32887087" visible="true" version="12" changeset="140970965" timestamp="2023-09-08T06:51:36Z" user="tg4567" uid="12500589">
+<nd ref="370404760"/>
+<nd ref="370404762"/>
+<nd ref="370404766"/>
+<nd ref="370404768"/>
+<nd ref="1830951668"/>
+<nd ref="1830951677"/>
+<nd ref="370404771"/>
+<nd ref="370404773"/>
+<nd ref="370404774"/>
+<nd ref="370404775"/>
+<nd ref="370404778"/>
+<nd ref="370404781"/>
+<nd ref="370404760"/>
+<tag k="addr:city" v="Cкoпje"/>
+<tag k="addr:city:en" v="Skopje"/>
+<tag k="addr:country" v="MK"/>
+<tag k="addr:postcode" v="1000"/>
+<tag k="addr:street" v="Самоилова"/>
+<tag k="addr:street:en" v="Samoilova"/>
+<tag k="amenity" v="arts_centre"/>
+<tag k="building" v="yes"/>
+<tag k="charge" v="50 MKD"/>
+<tag k="email" v="msu-info@msuskopje.org.mk"/>
+<tag k="fax" v="+389 2 3110123"/>
+<tag k="fee" v="yes"/>
+<tag k="name" v="Музеј на современата уметност"/>
+<tag k="name:en" v="Contemporary Art Museum of Macedonia"/>
+<tag k="name:pl" v="Muzeum Sztuki Współczesnej"/>
+<tag k="name:zh" v="当代艺术博物馆"/>
+<tag k="opening_hours" v="Tu-Sa 10:00-15:00; Su 09:00-13:00"/>
+<tag k="phone" v="+389 2 3117734"/>
+<tag k="tourism" v="museum"/>
+<tag k="website" v="https://msu.mk/home/"/>
+<tag k="wikidata" v="Q3329592"/>
+<tag k="wikimedia_commons" v="Category:Contemporary Art Museum (North Macedonia)"/>
+<tag k="wikipedia" v="mk:Музеј на современата уметност (Скопје)"/>
+</way>
+</osm>
+
+<osm version="0.6" generator="CGImap 0.8.9 (704356 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<node id="11060006126" visible="true" version="1" changeset="138825621" timestamp="2023-07-21T18:12:27Z" user="Fraxi" uid="18774667" lat="43.4296697" lon="28.3377475">
+<tag k="name" v="Христо Градечлиев"/>
+<tag k="name:en" v="Hristo Gradechliev"/>
+<tag k="tourism" v="gallery"/>
+</node>
+</osm>
+
+<osm version="0.6" generator="CGImap 0.8.9 (1855399 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<way id="180363121" visible="true" version="11" changeset="143284469" timestamp="2023-10-28T21:20:52Z" user="b-jazz-bot" uid="9451067">
+<nd ref="1908098430"/>
+<nd ref="1908098428"/>
+<nd ref="1908098432"/>
+<nd ref="1908098426"/>
+<nd ref="1908098430"/>
+<tag k="addr:city" v="Cкoпje"/>
+<tag k="addr:city:en" v="Skopje"/>
+<tag k="addr:country" v="MK"/>
+<tag k="addr:postcode" v="1000"/>
+<tag k="building" v="yes"/>
+<tag k="email" v="contact@nationalgallery.mk"/>
+<tag k="int_name" v="Nacionalna Galerija na Makedonija - Čifte Amam"/>
+<tag k="name" v="Национална галерија на Македонија „Чифте-амам“"/>
+<tag k="name:en" v="Chifte Hammam National Gallery of Macedonia"/>
+<tag k="name:tr" v="Çifte Hamam"/>
+<tag k="opening_hours" v="Tu-Su 10:00-18:00"/>
+<tag k="phone" v="+389 2 3227986"/>
+<tag k="roof:colour" v="grey"/>
+<tag k="tourism" v="gallery"/>
+<tag k="website" v="https://nationalgallery.mk/"/>
+<tag k="wikidata" v="Q1271865"/>
+<tag k="wikimedia_commons" v="Category:Čifte Amam"/>
+<tag k="wikipedia" v="en:Čifte Hammam"/>
+</way>
+</osm>
+
+<osm version="0.6" generator="CGImap 0.8.9 (1855396 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<node id="6827032732" visible="true" version="2" changeset="94157199" timestamp="2020-11-15T17:27:34Z" user="sarask" uid="12177121" lat="42.0009497" lon="21.4381580">
+<tag k="amenity" v="cafe"/>
+<tag k="location" v="Old Bazaar"/>
+<tag k="name" v="Gallery 7"/>
+<tag k="opening_hours" v="Mo-Su 09:00-21:00"/>
+</node>
+</osm>
+
+<osm version="0.6" generator="CGImap 0.8.10 (3800754 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<way id="172171547" visible="true" version="12" changeset="143284427" timestamp="2023-10-28T21:19:54Z" user="b-jazz-bot" uid="9451067">
+<nd ref="1831061821"/>
+<nd ref="1831061818"/>
+<nd ref="1831061820"/>
+<nd ref="1831061819"/>
+<nd ref="1831061821"/>
+<tag k="addr:city" v="Cкoпje"/>
+<tag k="addr:city:en" v="Skopje"/>
+<tag k="addr:country" v="MK"/>
+<tag k="addr:postcode" v="1000"/>
+<tag k="amenity" v="arts_centre"/>
+<tag k="building" v="yes"/>
+<tag k="email" v="contact@nationalgallery.mk"/>
+<tag k="fee" v="yes"/>
+<tag k="int_name" v="Nacionalna Galerija -Daut Pašin Amam"/>
+<tag k="name" v="Национална галерија „Даут-пашин амам“"/>
+<tag k="name:en" v="Daut Pasha Hamam National Gallery"/>
+<tag k="opening_hours" v="Tu-Su 10:00-18:00"/>
+<tag k="phone" v="+389 2 3133102"/>
+<tag k="tourism" v="museum"/>
+<tag k="website" v="https://nationalgallery.mk/"/>
+<tag k="wikipedia" v="en:National Gallery of Macedonia"/>
+</way>
+</osm>
+<osm version="0.6" generator="CGImap 0.8.10 (3800755 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<node id="7102244287" visible="true" version="1" changeset="79127855" timestamp="2020-01-02T19:26:09Z" user="Gallery RA" uid="9453044" lat="41.9989569" lon="21.3865879">
+<tag k="addr:housenumber" v="94"/>
+<tag k="addr:postcode" v="1000"/>
+<tag k="addr:street" v="Војвода Васил Чакаларов"/>
+<tag k="email" v="galerija.ra@gmail.com"/>
+<tag k="internet_access" v="wlan"/>
+<tag k="name" v="Galerija RA"/>
+<tag k="name:en" v="Gallery RA"/>
+<tag k="name:hr" v="Macedonian"/>
+<tag k="opening_hours" v="Mo-Sa 10:00-20:00"/>
+<tag k="phone" v="+389075435402"/>
+<tag k="tourism" v="museum"/>
+</node>
+</osm>
+
+<osm version="0.6" generator="CGImap 0.8.10 (3800743 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<node id="6102488862" visible="true" version="2" changeset="129620088" timestamp="2022-12-01T21:03:58Z" user="StopConsuming_StartProducing" uid="5592573" lat="41.9941112" lon="21.4340211">
+<tag k="artwork_type" v="streetart"/>
+<tag k="name" v="Градот убав"/>
+<tag k="name:en" v="Street Art & Graffiti Gallery"/>
+<tag k="tourism" v="artwork"/>
+</node>
+</osm>
