@@ -65,7 +65,7 @@ public class OSMToJsonConverterAndFilter {
                     first_line = true;
                 }
 
-                if (insideNodeOrWay && (line.matches("<tag k=\"(name|lat|lon|addr:street|addr:postcode|addr:housenumber)\".*"))) {
+                if (insideNodeOrWay && (line.matches("<tag k=\"(name|lat|lon|addr:street|addr:postcode|addr:housenumber|email|phone|opening_hours)\".*"))) {
                     if(!first_line) {
                         writer.write(",\n");
                     }
