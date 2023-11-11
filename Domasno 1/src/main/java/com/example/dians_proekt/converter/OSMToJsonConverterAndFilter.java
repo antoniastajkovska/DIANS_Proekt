@@ -1,12 +1,14 @@
 package com.example.dians_proekt.converter;
 
+import com.example.dians_proekt.filters.*;
+
 import java.io.*;
 
 public class OSMToJsonConverterAndFilter {
 
     public static void main(String[] args) {
         try {
-            filterAndConvert("src/main/resources/files/art.xml", "src/main/resources/files/result.json");
+            filterAndConvert("Domasno 1/src/main/resources/files/art.xml", "Domasno 1/src/main/resources/files/result1.json");
             System.out.println("Conversion completed successfully.");
         } catch (IOException e) {
             e.printStackTrace();
@@ -31,15 +33,16 @@ public class OSMToJsonConverterAndFilter {
                 if ((line.contains("<node") && !line.contains("/>") )|| (line.contains("<way") && !line.contains("/>"))) {
                     String[] node = line.split(" ");
                     for (String s : node) {
+
+                        Pipeline<String, String> LatLonPipeline = new Pipeline<>(new SplitStringFilter())
+                                .pipe(new RemoveSignFilter())
+                                .pipe(new RemoveTagFilter());
+
                         if(s.contains(lat)) {
-                            lat = s.split("=")[1];
-                            lat = lat.replace(">", "");
-                            lat = lat.replace("<node ", "");
+                            lat = LatLonPipeline.process(s);
                         }
                         else if(s.contains(lon)) {
-                            lon = s.split("=")[1];
-                            lon = lon.replace(">", "");
-                            lon = lon.replace("<node ", "");
+                            lon = LatLonPipeline.process(s);
                         }
                     }
                     if(!first_bracket) {
