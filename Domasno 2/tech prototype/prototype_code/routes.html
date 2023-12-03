@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <title>MapArt</title>
+    <style>
+        body {
+            width: 1519px;
+            background-color: gainsboro;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-link {
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: grey;">
+    <a class="navbar-brand" href="home.html"><img src="photos/logo.png" alt="Logo" style="width: 100px; height: auto;"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Дома</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Галерии
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="galleries.html">Пребарувај галерии</a>
+                    <a class="dropdown-item" href="routes.html">Најди рута</a>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zanas.html">За нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+        </ul>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="text-align: right;  display: flex; margin-left: auto;">
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Пребарај" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark" type="submit"><img src="photos/search.png"
+                                                                                class="mx-auto d-block"
+                                                                                style="width: 18px"></button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End navigation bar-->
+<h4 style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 30px;">
+    Најдете ја најкратката рута до посакуваната галерија:
+</h4>
+
+<div class="row justify-content-between"
+     style="margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 50px;">
+
+    <div id="form" class="col-md-3">
+
+        <div class="form-group">
+            <label for="location">Локација</label>
+            <input type="text" class="form-control" id="location" placeholder="Внесете стартна локација" required>
+        </div>
+        <div class="form-group">
+            <label for="destination">Избери дестинација:</label>
+
+            <select id="destination">
+                <option value="gallery1">Галерија 1</option>
+                <option value="gallery2">Галерија 2</option>
+                <option value="gallery3">Галерија 3</option>
+                <option value="gallery3">Галерија 4</option>
+            </select>
+        </div>
+
+    </div>
+    <div id="route_map" class="col-md-7">
+        <img src="photos/map.png" style="width: 700px">
+    </div>
+</div>
+<!--        Footer-->
+<br/><br/>
+<hr/>
+<footer style="background-color: grey; width: 100%; margin-top: auto; padding: 10px; color: white">
+    <div class="row">
+        <div class="col text-center">
+            <h4>Контакт</h4>
+            <p>Email: MapArt@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="col text-center">
+            <br/><br/><span>© Copyright 2023 FINKI DIANS domasno2</span>
+        </div>
+        <div class="col text-center">
+            <h4>Следи не</h4>
+            <img style="width:20px;" src="photos/instagram_white.svg.png"><a> @MapArt</i></a>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
