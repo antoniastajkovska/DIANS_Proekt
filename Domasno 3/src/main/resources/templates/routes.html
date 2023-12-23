@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html>
+
 <head>
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
+
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -30,18 +34,21 @@
         .nav-link {
             font-size: 25px;
         }
+
         #map {
             height: 500px;
             margin-top: 10px;
         }
 
     </style>
-</head>
-<body>
 
+</head>
+
+<body>
 <!--Navigation bar-->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: grey;">
-    <a class="navbar-brand" href="/home"><img th:src="@{/photos/logo.png}" alt="Logo" style="width: 100px; height: auto;"></a>
+    <a class="navbar-brand" href="/home"><img th:src="@{/photos/logo.png}" alt="Logo"
+                                              style="width: 100px; height: auto;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -89,34 +96,29 @@
     </div>
 </nav>
 <!--End navigation bar-->
-<h4 style="margin: 30px 50px;">
-    Најдете ја најкратката рута до посакуваната галерија:
-</h4>
-
 <div class="row justify-content-between"
      style="margin: 50px;">
-
     <div id="form" class="col-md-3">
-        <div class="form-group">
-            <label for="startLat">Стартна латитуда</label>
-            <input type="text" class="form-control" id="startLat" placeholder="Внесете латитуда" required>
-        </div>
-        <div class="form-group">
-            <label for="startLon">Стартна лонгитуда</label>
-            <input type="text" class="form-control" id="startLon" placeholder="Внесете лонгитуда" required>
-        </div>
+        <h4>
+            Рути:
+        </h4>
+        <p>
+            Изберете дестинација и кликнете ја вашата стартна локација на мапата за да ја најдете најкратката рута до
+            посакуваната галерија.
+        </p>
         <div class="form-group">
             <label for="destination">Избери дестинација:</label>
-            <select id="destination">
-                <option th:each="gallery:${galleries}" th:value="${gallery.getId()}" th:text="${gallery.getName()}"></option>
-            </select>
-            <button id="searchButton">Пребарај</button>
+            <div class="input-group">
+                <select id="destination" class="form-control">
+                    <option th:each="gallery:${galleries}" th:value="${gallery.lat + ' ' + gallery.lon}"
+                            th:text="${gallery.getName()}"></option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="col-md-7">
         <div id="map"></div>
     </div>
-    <script type="text/javascript" th:src="@{map.js}"></script>
 </div>
 <!--        Footer-->
 <br/><br/>
@@ -133,9 +135,16 @@
         </div>
         <div class="col text-center">
             <h4>Следи не</h4>
-            <img style="width:20px;" th:src="@{photos/instagram_white.svg.png}" alt=""><a> @MapArt</a>    </div>
+            <img style="width:20px;" th:src="@{photos/instagram_white.svg.png}" alt=""><a> @MapArt</a></div>
     </div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+<script type="text/javascript" th:src="@{routefinder.js}"></script>
+
 </body>
+
 </html>
