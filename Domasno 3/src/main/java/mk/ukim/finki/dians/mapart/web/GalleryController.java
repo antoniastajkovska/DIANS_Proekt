@@ -52,14 +52,6 @@ public class GalleryController {
         return "galleries";
     }
 
-    // Handles HTTP GET requests for the "/galleries/setLocation/{id}" endpoint
-    @GetMapping("/setLocation/{id}")
-    public String getLocationOfGallery(@PathVariable Long id,
-                                       Model model) {
-        // Redirect to the "/galleries" endpoint with the gallery's ID as a parameter
-        return "redirect:/galleries?id=" + id;
-    }
-
     // Handles HTTP POST requests for the "/galleries" endpoint
     @PostMapping
     public String searchGalleriesByName(Model model,
