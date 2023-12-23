@@ -25,4 +25,14 @@ public class GalleryServiceImpl implements GalleryService {
     public Optional<Gallery> findById(Long id) {
         return galleryRepository.findById(id);
     }
+
+    @Override
+    public List<Gallery> listGalleriesByNameLike(String name) {
+        if (name != null && !name.isEmpty()) {
+            return galleryRepository.findGalleriesByNameContainingIgnoreCase(name);
+        } else {
+            return galleryRepository.findAll();
+        }
+    }
+
 }

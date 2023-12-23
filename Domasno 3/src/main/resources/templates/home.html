@@ -59,16 +59,19 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav" style="text-align: right; display: flex; margin-left: auto;">
                 <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0">
+                    <!--Search form-->
+                    <form action="/galleries" method="POST" class="form-inline my-2 my-lg-0">
                         <div class="input-group">
-                            <input class="form-control" type="search" placeholder="Пребарај" aria-label="Search">
+                            <input class="form-control" type="text" name="galleryName" placeholder="Пребарај"
+                                   aria-label="Search">
                             <div class="input-group-append">
-                                <button class="btn btn-dark" type="submit"><img th:src="@{photos/search.png}"
-                                                                                class="mx-auto d-block"
-                                                                                style="width: 18px"></button>
+                                <button class="btn btn-dark" type="submit">
+                                    <img th:src="@{photos/search.png}" class="mx-auto d-block" style="width: 18px">
+                                </button>
                             </div>
                         </div>
                     </form>
+                    <!--End Search form-->
                 </li>
             </ul>
         </div>
@@ -80,7 +83,7 @@
 <div id="imageCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active"
-             th:style="'background-image: url(\'' + @{/photos/home_photo.jpg} + '\'); height: 540px; background-size: cover; background-position: center'">
+             th:style="'background-image: url(' + @{/photos/home_photo.jpg} + '); height: 540px; background-size: cover; background-position: center'">
             <div class="col-md-5" style="color: black; padding-top: 60px; margin-left: 90px;">
                 <h1>ДОБРОДОЈДОВТЕ</h1>
                 <p style="width: 600px; font-size: 18px;">Истражете ги уметничките галерии во Македонија.
@@ -89,7 +92,7 @@
             </div>
         </div>
         <div class="carousel-item"
-             th:style="'background-image: url(\'' + @{/photos/home_photo2.jpg} + '\'); height: 540px; background-size: cover; background-position: center'">
+             th:style="'background-image: url(' + @{/photos/home_photo2.jpg} + '); height: 540px; background-size: cover; background-position: center'">
             <div class="col-md-5" style="color: black; padding-top: 60px; margin-left: 90px;">
                 <h1>НАША ЦЕЛ</h1>
                 <p style="width: 600px; font-size: 18px;">Целта на нашиот проект е да создадеме веб апликација

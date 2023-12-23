@@ -44,4 +44,12 @@ public class GalleryController {
                                        Model model){
         return "redirect:/galleries?id="+id;
     }
+    @PostMapping
+    public String getGalleriesPage(Model model,
+                                   @RequestParam(required = false) Long id,
+                                   @RequestParam(required = false) String galleryName) {
+        List<Gallery> galleries = galleryService.listGalleriesByNameLike(galleryName);
+        model.addAttribute("galleries", galleries);
+        return "galleries";
+    }
 }

@@ -89,16 +89,19 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav" style="text-align: right;  display: flex; margin-left: auto;">
                 <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0">
+                    <!--Search form-->
+                    <form action="/galleries" method="POST" class="form-inline my-2 my-lg-0">
                         <div class="input-group">
-                            <input class="form-control" type="search" placeholder="Пребарај" aria-label="Search">
+                            <input class="form-control" type="text" name="galleryName" placeholder="Пребарај"
+                                   aria-label="Search">
                             <div class="input-group-append">
-                                <button class="btn btn-dark" type="submit"><img th:src="@{photos/search.png}"
-                                                                                class="mx-auto d-block"
-                                                                                style="width: 18px" alt=""></button>
+                                <button class="btn btn-dark" type="submit">
+                                    <img th:src="@{photos/search.png}" class="mx-auto d-block" style="width: 18px">
+                                </button>
                             </div>
                         </div>
                     </form>
+                    <!--End Search form-->
                 </li>
             </ul>
         </div>
