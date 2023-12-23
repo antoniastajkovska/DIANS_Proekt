@@ -36,15 +36,9 @@
 <tag k="wikidata" v="Q3329592"/>
 <tag k="wikimedia_commons" v="Category:Contemporary Art Museum (North Macedonia)"/>
 <tag k="wikipedia" v="mk:Музеј на современата уметност (Скопје)"/>
+<tag k="lat" v="42.00408022219832"/>
+<tag k="lon" v="21.432706455576056"/>
 </way>
-</osm>
-
-<osm version="0.6" generator="CGImap 0.8.9 (704356 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<node id="11060006126" visible="true" version="1" changeset="138825621" timestamp="2023-07-21T18:12:27Z" user="Fraxi" uid="18774667" lat="43.4296697" lon="28.3377475">
-<tag k="name" v="Христо Градечлиев"/>
-<tag k="name:en" v="Hristo Gradechliev"/>
-<tag k="tourism" v="gallery"/>
-</node>
 </osm>
 
 <osm version="0.6" generator="CGImap 0.8.9 (1855399 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
@@ -72,6 +66,8 @@
 <tag k="wikidata" v="Q1271865"/>
 <tag k="wikimedia_commons" v="Category:Čifte Amam"/>
 <tag k="wikipedia" v="en:Čifte Hammam"/>
+<tag k="lat" v="41.99889000198909"/>
+<tag k="lon" v="21.435812111763155"/>
 </way>
 </osm>
 
@@ -84,31 +80,6 @@
 </node>
 </osm>
 
-<osm version="0.6" generator="CGImap 0.8.10 (3800754 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<way id="172171547" visible="true" version="12" changeset="143284427" timestamp="2023-10-28T21:19:54Z" user="b-jazz-bot" uid="9451067">
-<nd ref="1831061821"/>
-<nd ref="1831061818"/>
-<nd ref="1831061820"/>
-<nd ref="1831061819"/>
-<nd ref="1831061821"/>
-<tag k="addr:city" v="Cкoпje"/>
-<tag k="addr:city:en" v="Skopje"/>
-<tag k="addr:country" v="MK"/>
-<tag k="addr:postcode" v="1000"/>
-<tag k="amenity" v="arts_centre"/>
-<tag k="building" v="yes"/>
-<tag k="email" v="contact@nationalgallery.mk"/>
-<tag k="fee" v="yes"/>
-<tag k="int_name" v="Nacionalna Galerija -Daut Pašin Amam"/>
-<tag k="name" v="Национална галерија „Даут-пашин амам“"/>
-<tag k="name:en" v="Daut Pasha Hamam National Gallery"/>
-<tag k="opening_hours" v="Tu-Su 10:00-18:00"/>
-<tag k="phone" v="+389 2 3133102"/>
-<tag k="tourism" v="museum"/>
-<tag k="website" v="https://nationalgallery.mk/"/>
-<tag k="wikipedia" v="en:National Gallery of Macedonia"/>
-</way>
-</osm>
 <osm version="0.6" generator="CGImap 0.8.10 (3800755 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
 <node id="7102244287" visible="true" version="1" changeset="79127855" timestamp="2020-01-02T19:26:09Z" user="Gallery RA" uid="9453044" lat="41.9989569" lon="21.3865879">
 <tag k="addr:housenumber" v="94"/>
