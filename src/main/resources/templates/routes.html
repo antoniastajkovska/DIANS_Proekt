@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <title>MapArt</title>
+    <style>
+        body {
+            width: 1519px;
+            background-color: gainsboro;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-link {
+            font-size: 25px;
+        }
+        #map {
+            height: 500px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: grey;">
+    <a class="navbar-brand" href="/home"><img th:src="@{/photos/logo.png}" alt="Logo" style="width: 100px; height: auto;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Дома</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Галерии
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/galleries">Пребарувај галерии</a>
+                    <a class="dropdown-item" href="/routes">Најди рута</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about_us">За нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+        </ul>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="text-align: right; display: flex; margin-left: auto;">
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Пребарај" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark" type="submit"><img th:src="@{photos/search.png}"
+                                                                                class="mx-auto d-block"
+                                                                                style="width: 18px"></button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End navigation bar-->
+<h4 style="margin: 30px 50px;">
+    Најдете ја најкратката рута до посакуваната галерија:
+</h4>
+
+<div class="row justify-content-between"
+     style="margin: 50px;">
+
+    <div id="form" class="col-md-3">
+
+        <div class="form-group">
+            <label for="location">Локација</label>
+            <input type="text" class="form-control" id="location" placeholder="Внесете стартна локација" required>
+        </div>
+        <div class="form-group">
+            <label for="destination">Избери дестинација:</label>
+
+            <select id="destination">
+                <option th:each="gallery:${galleries}" th:value="${gallery.getId()}" th:text="${gallery.getName()}"></option>
+            </select>
+        </div>
+
+    </div>
+    <div class="col-md-7">
+        <div id="map"></div>
+    </div>
+    <script type="text/javascript" th:src="@{map.js}"></script>
+</div>
+<!--        Footer-->
+<br/><br/>
+<hr/>
+<footer style="background-color: grey; width: 100%; margin-top: auto; padding: 10px; color: white">
+    <div class="row">
+        <div class="col text-center">
+            <h4>Контакт</h4>
+            <p>Email: MapArt@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="col text-center">
+            <br/><br/><span>© Copyright 2023 FINKI DIANS domasno2</span>
+        </div>
+        <div class="col text-center">
+            <h4>Следи не</h4>
+            <img style="width:20px;" th:src="@{photos/instagram_white.svg.png}" alt=""><a> @MapArt</a>    </div>
+    </div>
+</footer>
+
+</body>
+</html>
