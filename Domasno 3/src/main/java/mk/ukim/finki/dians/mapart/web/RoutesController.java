@@ -14,15 +14,21 @@ import java.util.List;
 public class RoutesController {
     private final GalleryService galleryService;
 
+    // Constructor-based dependency injection
     public RoutesController(GalleryService galleryService) {
         this.galleryService = galleryService;
     }
 
+    // Handles HTTP GET requests for the "/routes" endpoint
     @GetMapping
-    public String getRoutesPage(Model model){
+    public String getRoutesPage(Model model) {
+        // Retrieves a list of all galleries
         List<Gallery> galleries = galleryService.listAllGalleries();
-        model.addAttribute("galleries",galleries);
+
+        // Adds the list of galleries to the model
+        model.addAttribute("galleries", galleries);
+
+        // Returns the logical view name "routes"
         return "routes";
     }
 }
-

@@ -26,9 +26,16 @@ public class MapArtApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-       ObjectMapper objectMapper = new ObjectMapper();
-       File jsonFile = new File("src/main/resources/static/data/result.json").getAbsoluteFile();
-       List<Gallery> galleries = Arrays.asList(objectMapper.readValue(jsonFile,Gallery[].class));
-       galleryRepository.saveAll(galleries);
+        // Create an ObjectMapper to map JSON to Java objects
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        // Specify the path to the JSON file
+        File jsonFile = new File("src/main/resources/static/data/result.json").getAbsoluteFile();
+
+        // Read the JSON file and map it to a list of Gallery objects
+        List<Gallery> galleries = Arrays.asList(objectMapper.readValue(jsonFile, Gallery[].class));
+
+        // Save the list of galleries to the database using the injected GalleryRepository
+        galleryRepository.saveAll(galleries);
     }
 }

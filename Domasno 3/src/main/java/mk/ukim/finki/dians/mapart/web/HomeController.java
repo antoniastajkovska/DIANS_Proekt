@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/home")
 public class HomeController {
+
+    // Handles HTTP GET requests for the "/home" endpoint
     @GetMapping
-    public String getHomePage(){
+    public String getHomePage() {
+        // Returns the logical view name "home"
         return "home";
     }
 }
