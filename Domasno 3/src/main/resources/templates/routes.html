@@ -97,19 +97,21 @@
      style="margin: 50px;">
 
     <div id="form" class="col-md-3">
-
         <div class="form-group">
-            <label for="location">Локација</label>
-            <input type="text" class="form-control" id="location" placeholder="Внесете стартна локација" required>
+            <label for="startLat">Стартна латитуда</label>
+            <input type="text" class="form-control" id="startLat" placeholder="Внесете латитуда" required>
+        </div>
+        <div class="form-group">
+            <label for="startLon">Стартна лонгитуда</label>
+            <input type="text" class="form-control" id="startLon" placeholder="Внесете лонгитуда" required>
         </div>
         <div class="form-group">
             <label for="destination">Избери дестинација:</label>
-
             <select id="destination">
                 <option th:each="gallery:${galleries}" th:value="${gallery.getId()}" th:text="${gallery.getName()}"></option>
             </select>
+            <button id="searchButton">Пребарај</button>
         </div>
-
     </div>
     <div class="col-md-7">
         <div id="map"></div>

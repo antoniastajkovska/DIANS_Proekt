@@ -114,8 +114,9 @@
                             <div class="card" style="width: 28rem;">
 
                                 <div class="card-body">
-                                    <h5 class="card-title" th:text="${gallery.getName()}"></h5>
-
+                                    <a th:href="@{'/galleries/setLocation/{id}' (id = ${gallery.getId()}) }">
+                                        <h5 class="card-title" th:text="${gallery.getName()}"></h5>
+                                    </a>
                                     <p data-toggle="collapse" th:data-target="'#collapse' + ${iterStat.index}"
                                        aria-expanded="false" aria-controls="'collapse' + ${iterStat.index}">
                                         <a type="button" class="btn btn-light btn-sm">Види информации</a>

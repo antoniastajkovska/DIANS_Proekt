@@ -27,7 +27,7 @@ public class MapArtApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
        ObjectMapper objectMapper = new ObjectMapper();
-       File jsonFile = new File("src\\main\\java\\mk\\ukim\\finki\\dians\\mapart\\data\\result.json").getAbsoluteFile();
+       File jsonFile = new File("src/main/resources/static/data/result.json").getAbsoluteFile();
        List<Gallery> galleries = Arrays.asList(objectMapper.readValue(jsonFile,Gallery[].class));
        galleryRepository.saveAll(galleries);
     }

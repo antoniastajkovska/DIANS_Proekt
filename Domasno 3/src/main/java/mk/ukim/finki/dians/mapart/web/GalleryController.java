@@ -20,9 +20,28 @@ public class GalleryController {
     }
 
     @GetMapping
-    public String getGalleriesPage(Model model) {
+    public String getGalleriesPage(Model model,
+                                   @RequestParam(required = false) Long id) {
+        if(id!=null){
+            Gallery gallery=null;
+            if(galleryService.findById(id).isPresent()){
+                gallery=galleryService.findById(id).get();
+                Double lon = gallery.getLon();
+                Double lat = gallery.getLat();
+                String name = gallery.getName();
+                //sets lat and lon
+                model.addAttribute("lon",lon);
+                model.addAttribute("lan", lat);
+                model.addAttribute("name",name);
+            }
+        }
         List<Gallery> galleries = galleryService.listAllGalleries();
         model.addAttribute("galleries", galleries);
         return "galleries";
+    }
+    @GetMapping("/setLocation/{id}")
+    public String getLocationOfGallery(@PathVariable Long id,
+                                       Model model){
+        return "redirect:/galleries?id="+id;
     }
 }
