@@ -38,6 +38,7 @@
 <tag k="wikipedia" v="mk:Музеј на современата уметност (Скопје)"/>
 <tag k="lat" v="42.00408022219832"/>
 <tag k="lon" v="21.432706455576056"/>
+<tag k="addr:housenumber" v="17"/>
 </way>
 </osm>
 
@@ -68,6 +69,8 @@
 <tag k="wikipedia" v="en:Čifte Hammam"/>
 <tag k="lat" v="41.99889000198909"/>
 <tag k="lon" v="21.435812111763155"/>
+<tag k="addr:street" v="Rd. Jordan Mijalkov"/>
+<tag k="addr:housenumber" v="18"/>
 </way>
 </osm>
 
@@ -77,6 +80,10 @@
 <tag k="location" v="Old Bazaar"/>
 <tag k="name" v="Gallery 7"/>
 <tag k="opening_hours" v="Mo-Su 09:00-21:00"/>
+<tag k="addr:street" v="191"/>
+<tag k="addr:housenumber" v="4"/>
+<tag k="addr:postcode" v="1000"/>
+<tag k="phone" v="+38970636084"/>
 </node>
 </osm>
 
@@ -102,5 +109,8 @@
 <tag k="name" v="Градот убав"/>
 <tag k="name:en" v="Street Art & Graffiti Gallery"/>
 <tag k="tourism" v="artwork"/>
+<tag k="opening_hours" v="Mo-Su Open 24 hours"/>
+<tag k="addr:street" v="GTC"/>
+<tag k="addr:postcode" v="1000"/>
 </node>
 </osm>
