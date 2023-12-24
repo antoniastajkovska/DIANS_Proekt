@@ -50,4 +50,4 @@ jobs:
           app-name: 'MapArt'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_01C2FD78DF2E4255AC9B8F0D9AB79249 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C4EEF26A0D30400980162E35B8CD207E }}
