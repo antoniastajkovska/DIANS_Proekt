@@ -47,6 +47,7 @@ public class MapArtApplication implements CommandLineRunner {
 
         // Read the JSON string and map it to a list of Gallery objects
         List<Gallery> galleries = Arrays.asList(objectMapper.readValue(jsonString, Gallery[].class));
+        // print galleries
         for (Gallery gallery : galleries) {
             System.out.println(gallery);
         }
