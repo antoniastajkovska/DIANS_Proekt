@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Domasno 4.iml" filepath="$PROJECT_DIR$/.idea/Domasno 4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ui-microservice/MapArt.iml" filepath="$PROJECT_DIR$/ui-microservice/MapArt.iml" />
       <module fileurl="file://$PROJECT_DIR$/gallery-microservice/MapArt (1).iml" filepath="$PROJECT_DIR$/gallery-microservice/MapArt (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/dataconversion-microservice/MapArt (2).iml" filepath="$PROJECT_DIR$/dataconversion-microservice/MapArt (2).iml" />
     </modules>
